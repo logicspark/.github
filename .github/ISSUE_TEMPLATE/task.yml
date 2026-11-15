@@ -1,0 +1,30 @@
+name: Task
+description: Dev work for a story. Best created as a sub-issue of the story in the hub repo.
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Best way: open the **story** in the hub repo → **Add sub-issue** → **Create new** → pick this repo.
+        **1 task = 1 pull request.**
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What to do
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      placeholder: |
+        - [ ] ...
+        - [ ] Tests added or updated
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: API contract, tables touched, risks.
